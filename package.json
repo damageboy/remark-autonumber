@@ -1,0 +1,32 @@
+{
+  "name": "remark-autonumber",
+  "version": "1.0.0",
+  "description": "Add numbers to headings",
+  "main": "index.js",
+  "repository": "https://github.com/damagebot/remark-autonumber",
+  "author": "Dan Shechter <dans@houmus.org>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "remark",
+    "plugin",
+    "markdown",
+    "html",
+    "section"
+  ],
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "unist-util-find-after": "^2.0.2",
+    "unist-util-visit-parents": "^2.0.1"
+  },
+  "devDependencies": {
+    "dedent": "^0.7.0",
+    "remark": "^10.0.1",
+    "tape": "^4.9.2",
+    "unist-builder": "^1.0.3",
+    "unist-util-remove-position": "^1.1.2"
+  }
+}
