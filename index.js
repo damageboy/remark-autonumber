@@ -18,6 +18,9 @@ const plugin = (options) => {
     visit(ast, 'heading', (node) => {
       if (node.children.length > 0) {
         heading_nums[node.depth-1]++;
+	for (let i = node.depth; i < heading_nums.length; i++) {
+            heading_nums[i] = 0;
+	}
         node.children.unshift({
           type: 'text',
           value: `${heading_nums.slice(0, node.depth).join('.')} `,
